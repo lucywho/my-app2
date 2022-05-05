@@ -14,6 +14,9 @@ export default function Home() {
                     </a>
                 </Link>
             </div>
+            <div className="text-lg bg-slate-300">
+                &copy; greatBlogs inc. 2022
+            </div>
         </div>
     );
 }
