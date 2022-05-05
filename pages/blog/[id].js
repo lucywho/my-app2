@@ -1,11 +1,10 @@
 // import { useRouter } from "next/router";
+
 import Link from "next/link";
 
 import posts from "../../posts.json";
 
 export default function BlogPost({ post }) {
-    // const router = useRouter();
-    // const post = posts[router.query.id];
     if (!post) return <p></p>;
 
     return (
@@ -16,6 +15,9 @@ export default function BlogPost({ post }) {
                 </h1>
                 <p className="text-m font-medium text-slate-800 p-2">
                     {post.content}
+                </p>
+                <p className="text-m font-medium text-slate-800 p-2">
+                    {post.comment}
                 </p>
             </div>
             <Link href="/blog">
